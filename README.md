@@ -9,11 +9,11 @@
         reth-data
 
 ## Make an Image in docker ->
-// Start Downloading Archive Node
+Start Build an Docker Named (reth-archive)
 
 `docker build -t reth-archive .`
 
-## Run ETH Node ->
+## Run Docker for Download Archive Node ->
 
 ```powershell
 docker run -d `
@@ -24,3 +24,12 @@ docker run -d `
   -p 30303:30303/udp `
   -v ${PWD}\reth-data:/data/reth `
   reth-archive
+```
+
+## Check if Docker is running ->
+
+`docker ps`
+
+and see Log data of eth node
+
+` docker logs -f reth-archive`
