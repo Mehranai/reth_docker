@@ -1,17 +1,18 @@
 # reth_docker
 
 ## Go to the PowerShell ->
+```markdown
+`cd C:\Users\<user>\reth_docker\docker`
 
-    **cd C:\Users\<user>\reth_docker\docker**
-
-    dir --->    Dockerfile
-                reth-data
+`dir`
+--->    Dockerfile
+        reth-data
 
 ## Make an Image in docker ->
+// Start Downloading Archive Node
 
-    **docker build -t reth-archive .**
-
-    // Start Downloading Archive Node
+```markdown
+`docker build -t reth-archive .`
 
 ## Run ETH Node ->
 
